@@ -1,0 +1,13 @@
+request:
+    method: GET
+    url: /name-length
+    headers:
+        Content-Type: application/json
+    queryParameters:
+        name: hello
+response:
+    status: 200
+    headers:
+        Content-Type: application/json
+    body: 5
+
