@@ -56,7 +56,7 @@ jobs:
       - name: Deploy to Cloud Run
         uses: google-github-actions/deploy-cloudrun@main
         with:
-          image: meselu27/pringbot-application-demo-image:latest
+          image: meselu27/springbot-application-demo-image:latest
           service: application-deployment
           region: us-central1
           platform: managed
