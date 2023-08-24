@@ -50,13 +50,13 @@ jobs:
       - name: Set up Google Cloud SDK
         uses: google-github-actions/setup-gcloud@v0
         with:
-          project_id: spring-app-55394
+          project_id: spring-app-demo-53561
           service_account_key: ${{ secrets.SA_CREDS}}
           export_default_credentials: true
       - name: Deploy to Cloud Run
         uses: google-github-actions/deploy-cloudrun@main
         with:
-          image: meselu27/springbot-application-image:latest
+          image: meselu27/pringbot-application-demo-image:latest
           service: application-deployment
           region: us-central1
           platform: managed
